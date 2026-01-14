@@ -1,0 +1,580 @@
+<html lang="de" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAL GmbH - Automotive Engineering Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Custom scrollbar for a cleaner feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-600 selection:bg-[#00753F] selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center group">
+                <img src="logo23.png" alt="FAL GmbH Logo" class="h-10 w-auto">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#"
+                    class="text-sm font-medium text-slate-500 hover:text-[#00753F] transition-colors">Unternehmen</a>
+                <a href="#products"
+                    class="text-sm font-medium text-slate-500 hover:text-[#00753F] transition-colors">Produkte</a>
+                <a href="#repair"
+                    class="text-sm font-medium text-slate-500 hover:text-[#00753F] transition-colors">Instandsetzung</a>
+                <a href="#" class="text-sm font-medium text-slate-500 hover:text-[#00753F] transition-colors">Shop</a>
+            </div>
+
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a href="#contact"
+                    class="hidden md:inline-flex items-center justify-center h-9 px-4 text-xs font-medium text-white bg-[#00753F] hover:bg-[#006032] rounded-md transition-all shadow-sm ring-1 ring-[#00753F] ring-offset-1">
+                    Kontakt aufnehmen
+                </a>
+                <button class="md:hidden text-slate-500">
+                    <span class="iconify" data-icon="lucide:menu" data-width="24"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-slate-50">
+        <div class="absolute inset-0 z-0">
+            <!-- Abstract grid pattern -->
+            <svg class="absolute w-full h-full text-slate-200 opacity-40" width="100%" height="100%"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)"></rect>
+            </svg>
+            <!-- Gradient fade -->
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-50"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="max-w-2xl">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00753F]/10 text-[#00753F] border border-[#00753F]/20 mb-6">
+                    <span class="iconify" data-icon="lucide:award" data-width="14"></span>
+                    <span class="text-xs font-medium tracking-wide uppercase">ISO 9001 Zertifiziert</span>
+                </div>
+                <h1 class="text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900 leading-[1.1] mb-6">
+                    Spezialist für Anlasser und <span class="text-[#00753F]">Lichtmaschinen</span> seit 1992.
+                </h1>
+                <p class="text-lg text-slate-500 mb-8 leading-relaxed max-w-lg">
+                    Ihr Partner für qualitativ hochwertige Wiederaufbereitung und Fahrzeugkomponenten. Präzision,
+                    Zuverlässigkeit und deutsche Ingenieurskunst.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#"
+                        class="inline-flex items-center justify-center h-11 px-6 text-sm font-medium text-white bg-[#00753F] hover:bg-[#006032] rounded-md transition-all shadow-md">
+                        Zum Shop
+                        <span class="iconify ml-2" data-icon="lucide:arrow-right" data-width="16"></span>
+                    </a>
+                    <a href="#products"
+                        class="inline-flex items-center justify-center h-11 px-6 text-sm font-medium text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 rounded-md transition-all">
+                        Produkte ansehen
+                    </a>
+                </div>
+
+                <div class="mt-12 flex items-center gap-8 border-t border-slate-200 pt-8">
+                    <div>
+                        <p class="text-2xl font-semibold text-slate-900 tracking-tight">30+</p>
+                        <p class="text-xs text-slate-500 font-medium uppercase tracking-wide">Jahre Erfahrung</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-semibold text-slate-900 tracking-tight">10k+</p>
+                        <p class="text-xs text-slate-500 font-medium uppercase tracking-wide">Artikel auf Lager</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-semibold text-slate-900 tracking-tight">24h</p>
+                        <p class="text-xs text-slate-500 font-medium uppercase tracking-wide">Express Versand</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image Visual -->
+            <div
+                class="relative h-[400px] lg:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl border border-slate-200 group">
+                <!-- Using a placeholder specifically thematic to mechanic/engine parts -->
+                <img src="fal_anlasser_und-_lichtmaschinen.jpg" alt="FAL GmbH Vehicles"
+                    class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 text-white">
+                    <p class="text-sm font-medium opacity-90">Premium Instandsetzung</p>
+                    <p class="text-xs opacity-70">Made in Germany</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section id="products" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <h2 class="text-2xl lg:text-3xl font-semibold tracking-tight text-slate-900 mb-3">Unsere
+                        Produktkategorien</h2>
+                    <p class="text-slate-500 max-w-xl">
+                        Hochwertige Komponenten für PKW, LKW, Landmaschinen und Industrieanwendungen.
+                    </p>
+                </div>
+                <a href="#"
+                    class="text-sm font-medium text-[#00753F] hover:text-[#005a30] inline-flex items-center group">
+                    Alle Produkte ansehen
+                    <span class="iconify ml-1 transition-transform group-hover:translate-x-1"
+                        data-icon="lucide:arrow-right" data-width="16"></span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Product Card 1 -->
+                <div
+                    class="group p-6 rounded-xl border border-slate-200 bg-white hover:shadow-lg hover:border-[#00753F]/30 transition-all duration-300">
+                    <div
+                        class="h-12 w-12 bg-slate-50 rounded-lg flex items-center justify-center text-[#00753F] mb-6 group-hover:bg-[#00753F] group-hover:text-white transition-colors">
+                        <span class="iconify" data-icon="lucide:zap" data-width="24"></span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2">Anlasser</h3>
+                    <p class="text-sm text-slate-500 mb-4">Robuste Starter für alle Fahrzeugtypen. Maximale Startkraft
+                        auch unter extremen Bedingungen.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-xs text-slate-600">
+                            <span class="iconify text-[#00753F] mr-2" data-icon="lucide:check" data-width="14"></span>
+                            Neuteile &amp; AT-Teile
+                        </li>
+                        <li class="flex items-center text-xs text-slate-600">
+                            <span class="iconify text-[#00753F] mr-2" data-icon="lucide:check" data-width="14"></span>
+                            Prüfprotokoll inklusive
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div
+                    class="group p-6 rounded-xl border border-slate-200 bg-white hover:shadow-lg hover:border-[#00753F]/30 transition-all duration-300">
+                    <div
+                        class="h-12 w-12 bg-slate-50 rounded-lg flex items-center justify-center text-[#00753F] mb-6 group-hover:bg-[#00753F] group-hover:text-white transition-colors">
+                        <span class="iconify" data-icon="lucide:settings-2" data-width="24"></span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2">Lichtmaschinen</h3>
+                    <p class="text-sm text-slate-500 mb-4">Leistungsstarke Generatoren für konstante Energieversorgung.
+                        Präzise gewuchtet und getestet.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-xs text-slate-600">
+                            <span class="iconify text-[#00753F] mr-2" data-icon="lucide:check" data-width="14"></span>
+                            Hohe Ampere-Leistung
+                        </li>
+                        <li class="flex items-center text-xs text-slate-600">
+                            <span class="iconify text-[#00753F] mr-2" data-icon="lucide:check" data-width="14"></span>
+                            OE-Spezifikationen
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div
+                    class="group p-6 rounded-xl border border-slate-200 bg-white hover:shadow-lg hover:border-[#00753F]/30 transition-all duration-300">
+                    <div
+                        class="h-12 w-12 bg-slate-50 rounded-lg flex items-center justify-center text-[#00753F] mb-6 group-hover:bg-[#00753F] group-hover:text-white transition-colors">
+                        <span class="iconify" data-icon="lucide:wind" data-width="24"></span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2">Turbolader</h3>
+                    <p class="text-sm text-slate-500 mb-4">Effizienz und Leistung. Professionell instandgesetzte
+                        Turbolader für Diesel- und Benzinmotoren.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-xs text-slate-600">
+                            <span class="iconify text-[#00753F] mr-2" data-icon="lucide:check" data-width="14"></span>
+                            Feingewuchtet
+                        </li>
+                        <li class="flex items-center text-xs text-slate-600">
+                            <span class="iconify text-[#00753F] mr-2" data-icon="lucide:check" data-width="14"></span>
+                            Dichtungssätze verfügbar
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div
+                    class="group p-6 rounded-xl border border-slate-200 bg-white hover:shadow-lg hover:border-[#00753F]/30 transition-all duration-300">
+                    <div
+                        class="h-12 w-12 bg-slate-50 rounded-lg flex items-center justify-center text-[#00753F] mb-6 group-hover:bg-[#00753F] group-hover:text-white transition-colors">
+                        <span class="iconify" data-icon="lucide:thermometer-snowflake" data-width="24"></span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2">Klimakompressoren</h3>
+                    <p class="text-sm text-slate-500 mb-4">Für ein optimales Klima. Neue und wiederaufbereitete
+                        Kompressoren höchster Güte.</p>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div
+                    class="group p-6 rounded-xl border border-slate-200 bg-white hover:shadow-lg hover:border-[#00753F]/30 transition-all duration-300">
+                    <div
+                        class="h-12 w-12 bg-slate-50 rounded-lg flex items-center justify-center text-[#00753F] mb-6 group-hover:bg-[#00753F] group-hover:text-white transition-colors">
+                        <span class="iconify" data-icon="lucide:battery-medium" data-width="24"></span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2">Batterien</h3>
+                    <p class="text-sm text-slate-500 mb-4">Starterbatterien und Versorgungsbatterien. Langlebig und
+                        wartungsfrei.</p>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div
+                    class="group p-6 rounded-xl border border-slate-200 bg-white hover:shadow-lg hover:border-[#00753F]/30 transition-all duration-300">
+                    <div
+                        class="h-12 w-12 bg-slate-50 rounded-lg flex items-center justify-center text-[#00753F] mb-6 group-hover:bg-[#00753F] group-hover:text-white transition-colors">
+                        <span class="iconify" data-icon="lucide:wrench" data-width="24"></span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2">Ersatzteile</h3>
+                    <p class="text-sm text-slate-500 mb-4">Magnete, Regler, Freiläufe und weitere Kleinteile für die
+                        Instandsetzung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Repair Section -->
+    <section id="repair" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
+            <span class="iconify" data-icon="lucide:settings" data-width="400"></span>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="absolute -inset-4 bg-[#00753F] rounded-2xl rotate-2 opacity-20"></div>
+                <img src="Screenshot 2026-01-13 at 11.05.51 PM.png" alt="Workshop Machine"
+                    class="relative rounded-xl shadow-2xl border border-slate-700 w-full object-cover h-[400px]">
+
+                <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl max-w-xs hidden md:block">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div
+                            class="h-10 w-10 bg-green-100 rounded-full flex items-center justify-center text-[#00753F]">
+                            <span class="iconify" data-icon="lucide:shield-check" data-width="20"></span>
+                        </div>
+                        <div class="text-slate-900">
+                            <p class="font-semibold text-sm">Garantie</p>
+                            <p class="text-xs text-slate-500">24 Monate Gewährleistung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="inline-flex items-center gap-2 text-[#00753F] mb-4">
+                    <span class="h-px w-8 bg-[#00753F]"></span>
+                    <span class="text-sm font-medium uppercase tracking-wider text-emerald-400">Instandsetzung</span>
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight mb-6">Wir bringen Ihre Teile wieder zum
+                    Laufen.</h2>
+                <p class="text-slate-400 mb-8 leading-relaxed">
+                    Defekte Aggregate müssen nicht immer durch Neuteile ersetzt werden. Unsere spezialisierte Werkstatt
+                    prüft, reinigt und repariert Anlasser und Lichtmaschinen nach strengen industriellen Standards.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div
+                            class="mt-1 flex-shrink-0 h-6 w-6 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-emerald-400">
+                            <span class="text-xs font-bold">1</span>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-medium mb-1">Eingangsdiagnose</h4>
+                            <p class="text-sm text-slate-400">Detaillierte Prüfung auf unserem computergesteuerten
+                                Prüfstand.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div
+                            class="mt-1 flex-shrink-0 h-6 w-6 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-emerald-400">
+                            <span class="text-xs font-bold">2</span>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-medium mb-1">Aufbereitung</h4>
+                            <p class="text-sm text-slate-400">Zerlegung, Reinigung und Austausch von Verschleißteilen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div
+                            class="mt-1 flex-shrink-0 h-6 w-6 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-emerald-400">
+                            <span class="text-xs font-bold">3</span>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-medium mb-1">Endkontrolle</h4>
+                            <p class="text-sm text-slate-400">Funktionstest mit Protokollierung der Leistungswerte.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10">
+                    <a href="#"
+                        class="inline-flex items-center text-emerald-400 font-medium hover:text-emerald-300 transition-colors">
+                        Service anfragen
+                        <span class="iconify ml-2" data-icon="lucide:arrow-right" data-width="16"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop & Quality Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 text-[#00753F] mb-4">
+                            <span class="h-px w-8 bg-[#00753F]"></span>
+                            <span class="text-sm font-medium uppercase tracking-wider">Qualität & Technik</span>
+                        </div>
+                        <h2 class="text-3xl font-semibold tracking-tight text-slate-900 mb-4">Modernste Prüftechnik für
+                            maximale Zuverlässigkeit</h2>
+                        <p class="text-slate-500 leading-relaxed">
+                            Jedes von uns instandgesetzte Teil durchläuft einen strengen Prüfprozess auf unseren
+                            hochmodernen computergesteuerten Prüfständen. So garantieren wir, dass jedes Aggregat die
+                            volle Leistung erbringt und den höchsten industriellen Anforderungen entspricht.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="aspect-[4/3] rounded-xl overflow-hidden border border-slate-200 shadow-sm group">
+                            <img src="Screenshot 2026-01-13 at 11.05.37 PM.png" alt="Test bench"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="aspect-[4/3] rounded-xl overflow-hidden border border-slate-200 shadow-sm group">
+                            <img src="Screenshot 2026-01-13 at 11.06.39 PM.png" alt="Reception area"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-8 lg:p-12 rounded-3xl border border-slate-200 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -tr-1/4 opacity-[0.03] pointer-events-none">
+                        <span class="iconify" data-icon="lucide:shield-check" data-width="200"></span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-8">Der FAL Qualitäts-Standard</h3>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <div
+                                class="h-10 w-10 rounded-xl bg-white shadow-sm border border-slate-100 flex items-center justify-center text-[#00753F] shrink-0">
+                                <span class="iconify" data-icon="lucide:award" data-width="20"></span>
+                            </div>
+                            <div>
+                                <p class="text-base font-medium text-slate-900">Zertifizierte Prozesse</p>
+                                <p class="text-sm text-slate-500">Regelmäßige Audits und ISO 9001 Zertifizierung sichern
+                                    unsere Qualitätsstandards.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div
+                                class="h-10 w-10 rounded-xl bg-white shadow-sm border border-slate-100 flex items-center justify-center text-[#00753F] shrink-0">
+                                <span class="iconify" data-icon="lucide:monitor" data-width="20"></span>
+                            </div>
+                            <div>
+                                <p class="text-base font-medium text-slate-900">Digitale Protokollierung</p>
+                                <p class="text-sm text-slate-500">Jeder Test wird digital erfasst, sodass Sie ein
+                                    detailliertes Leistungszertifikat erhalten.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div
+                                class="h-10 w-10 rounded-xl bg-white shadow-sm border border-slate-100 flex items-center justify-center text-[#00753F] shrink-0">
+                                <span class="iconify" data-icon="lucide:truck" data-width="20"></span>
+                            </div>
+                            <div>
+                                <p class="text-base font-medium text-slate-900">Logistik-Zentrum</p>
+                                <p class="text-sm text-slate-500">Über 10.000 Artikel sofort verfügbar für schnellen
+                                    Austausch und minimalen Stillstand.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-50">
+        <div class="max-w-3xl mx-auto px-6 text-center mb-12">
+            <h2 class="text-2xl lg:text-3xl font-semibold tracking-tight text-slate-900 mb-4">Kontaktieren Sie uns</h2>
+            <p class="text-slate-500">Sie haben Fragen zu einem Produkt oder benötigen technische Unterstützung? Unser
+                Team hilft Ihnen gerne weiter.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <!-- Info Cards -->
+            <div class="col-span-1 space-y-4">
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="iconify text-[#00753F] mb-4" data-icon="lucide:map-pin" data-width="24"></span>
+                    <h3 class="font-medium text-slate-900 mb-1">Standort</h3>
+                    <p class="text-sm text-slate-500">
+                        Industriestraße 12<br>
+                        12345 Musterstadt<br>
+                        Deutschland
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="iconify text-[#00753F] mb-4" data-icon="lucide:phone" data-width="24"></span>
+                    <h3 class="font-medium text-slate-900 mb-1">Telefon</h3>
+                    <p class="text-sm text-slate-500">
+                        +49 (0) 123 456789-0<br>
+                        Mo-Fr: 08:00 - 17:00
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="iconify text-[#00753F] mb-4" data-icon="lucide:mail" data-width="24"></span>
+                    <h3 class="font-medium text-slate-900 mb-1">E-Mail</h3>
+                    <p class="text-sm text-slate-500">
+                        info@fal-gmbh.de<br>
+                        sales@fal-gmbh.de
+                    </p>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="col-span-1 md:col-span-2 bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-700 mb-2">Vorname</label>
+                            <input type="text"
+                                class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00753F]/20 focus:border-[#00753F] transition-all text-sm text-slate-900">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-700 mb-2">Nachname</label>
+                            <input type="text"
+                                class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00753F]/20 focus:border-[#00753F] transition-all text-sm text-slate-900">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-700 mb-2">E-Mail Adresse</label>
+                        <input type="email"
+                            class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00753F]/20 focus:border-[#00753F] transition-all text-sm text-slate-900">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-700 mb-2">Nachricht</label>
+                        <textarea rows="4"
+                            class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00753F]/20 focus:border-[#00753F] transition-all text-sm text-slate-900"></textarea>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <div class="flex h-5 items-center">
+                            <input id="privacy" type="checkbox"
+                                class="h-4 w-4 rounded border-slate-300 text-[#00753F] focus:ring-[#00753F]">
+                        </div>
+                        <div class="text-xs text-slate-500">
+                            <label for="privacy">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="#"
+                                    class="underline hover:text-[#00753F]">Datenschutzerklärung</a> zu.</label>
+                        </div>
+                    </div>
+
+                    <button type="button"
+                        class="w-full md:w-auto px-8 py-3 bg-[#00753F] text-white text-sm font-medium rounded-md hover:bg-[#006032] transition-all shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-[#00753F]">
+                        Nachricht senden
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+                <div class="col-span-2 lg:col-span-2 pr-8">
+                    <div class="flex items-center mb-6">
+                        <img src="logo23.png" alt="FAL GmbH Logo" class="h-8 w-auto brightness-0 invert">
+                    </div>
+                    <p class="text-sm leading-relaxed mb-6 text-slate-400">
+                        Ihr zuverlässiger Partner für Anlasser, Lichtmaschinen und Fahrzeugelektrik. Qualität, die
+                        bewegt – seit über 30 Jahren.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><span class="iconify"
+                                data-icon="lucide:facebook" data-width="20"></span></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><span class="iconify"
+                                data-icon="lucide:linkedin" data-width="20"></span></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><span class="iconify"
+                                data-icon="lucide:instagram" data-width="20"></span></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-sm font-medium mb-4">Unternehmen</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">Über uns</a></li>
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">Karriere</a></li>
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">Partner werden</a></li>
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-sm font-medium mb-4">Produkte</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">Anlasser</a></li>
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">Lichtmaschinen</a></li>
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">Turbolader</a></li>
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">Klimakompressoren</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-sm font-medium mb-4">Rechtliches</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">Impressum</a></li>
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">Datenschutz</a></li>
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">AGB</a></li>
+                        <li><a href="#" class="hover:text-[#00753F] transition-colors">Widerruf</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <p>© 2026 FAL GmbH. Alle Rechte vorbehalten. ISO 9001 Zertifiziert.</p>
+                <div class="flex gap-6">
+                    <span class="flex items-center gap-1"><span class="h-2 w-2 rounded-full bg-green-500"></span>
+                        Systems Operational</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
