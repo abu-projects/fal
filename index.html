@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -239,7 +240,7 @@
                     <div
                         class="group card-blur rounded-3xl overflow-hidden hover:border-jd-green/50 transition-all duration-500">
                         <div class="aspect-square bg-[#002a15] overflow-hidden">
-                            <img src="DOC202515133_600x600@2x.jpg" alt="Neuteil"
+                            <img src="DOC202515133_600x600@2x.jpg" alt="Neuteil" loading="lazy"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-8">
@@ -255,7 +256,7 @@
                     <div
                         class="group card-blur rounded-3xl overflow-hidden hover:border-jd-green/50 transition-all duration-500">
                         <div class="aspect-square bg-[#002a15] overflow-hidden">
-                            <img src="DOC202515134_600x600@2x.jpg" alt="Reparatur"
+                            <img src="DOC202515134_600x600@2x.jpg" alt="Reparatur" loading="lazy"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-8">
@@ -271,7 +272,7 @@
                     <div
                         class="group card-blur rounded-3xl overflow-hidden hover:border-jd-green/50 transition-all duration-500">
                         <div class="aspect-square bg-[#002a15] overflow-hidden">
-                            <img src="DOC202515135_600x600@2x.jpg" alt="Zubehör"
+                            <img src="DOC202515135_600x600@2x.jpg" alt="Zubehör" loading="lazy"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-8">
@@ -343,15 +344,15 @@
                             <div
                                 class="absolute -inset-4 bg-jd-green/20 rounded-[2rem] blur-2xl group-hover:bg-jd-green/30 transition-all duration-500">
                             </div>
-                            <img src="fal_anlasser_und-_lichtmaschinen.jpg" alt="Werkstatt"
+                            <img src="workshop.jpg" alt="Werkstatt" loading="lazy"
                                 class="relative rounded-[1.5rem] shadow-2xl w-full">
                         </div>
                         <div class="aspect-video rounded-2xl overflow-hidden border border-white/10 group">
-                            <img src="Screenshot 2026-01-13 at 11.05.37 PM.png" alt="Prüfstand"
+                            <img src="testbench.jpg" alt="Prüfstand" loading="lazy"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                         </div>
                         <div class="aspect-video rounded-2xl overflow-hidden border border-white/10 group">
-                            <img src="Screenshot 2026-01-13 at 11.06.39 PM.png" alt="Zentrum"
+                            <img src="center.jpg" alt="Zentrum" loading="lazy"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                         </div>
                     </div>
@@ -445,9 +446,9 @@
         canvas.height = window.innerHeight * window.devicePixelRatio;
         context.scale(window.devicePixelRatio, window.devicePixelRatio);
 
-        const frameCount = 240;
+        const frameCount = 120; // Reduced from 240 for faster loading
         const currentFrame = index => (
-            `exploded/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.jpg`
+            `exploded/ezgif-frame-${((index * 2) + 1).toString().padStart(3, '0')}.jpg`
         );
 
         const images = [];
