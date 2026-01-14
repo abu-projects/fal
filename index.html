@@ -83,9 +83,10 @@
         }
 
         .card-blur {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         /* Custom scrollbar */
@@ -159,29 +160,27 @@
         <!-- Hero Scrollytelling Section -->
         <div class="hero-sticky-container">
             <!-- Section 1: Hero Intro -->
-            <section id="overview" class="section-content">
-                <div class="max-w-5xl text-center px-6 relative py-16" data-gsap="fade-up">
-                    <!-- Readability Mask Overlay -->
+            <section id="overview" class="section-content !items-start !justify-center px-6 md:px-20 lg:px-32">
+                <div class="max-w-4xl text-left relative py-12" data-gsap="fade-up">
+                    <!-- Readability Mask Overlay - Subtle dark gradient from left -->
                     <div
-                        class="absolute inset-0 -z-10 bg-black/30 backdrop-blur-xl rounded-[4rem] scale-110 opacity-60">
+                        class="absolute inset-y-0 -left-20 w-[150%] -z-10 bg-gradient-to-r from-black/80 via-black/20 to-transparent blur-3xl opacity-60">
                     </div>
-                    <div class="absolute inset-0 -z-10 bg-radial from-black/60 to-transparent blur-3xl scale-150"></div>
 
-                    <span
-                        class="text-jd-green font-bold tracking-[0.3em] uppercase text-sm mb-6 block drop-shadow-lg">John
-                        Deere 12V 115A</span>
-                    <h1 class="text-5xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-[0.9] text-glow px-4">
-                        Spezial Reparatur und <br class="hidden lg:block"> Neuteile für <br class="hidden lg:block">
-                        Lichtmaschinen WG.2
+                    <span class="text-jd-green font-bold tracking-[0.5em] uppercase text-sm mb-6 block drop-shadow-lg">
+                        MODELL ALPHA-2
+                    </span>
+                    <h1 class="text-[3rem] font-extrabold tracking-tighter mb-8 leading-[1.1] text-glow">
+                        John Deere<br>Hochleistungssystem
                     </h1>
                     <p
-                        class="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-12 leading-relaxed font-light drop-shadow-md">
-                        Präzision in jeder Komponente. Erleben Sie die technologische Expertise der Lichtmaschinen-WG in
-                        einem neuen Licht.
+                        class="text-xl md:text-2xl text-white/70 max-w-2xl mb-12 leading-relaxed font-light drop-shadow-md">
+                        Ein Höchstmaß an Präzision, entwickelt für die anspruchsvollsten industriellen Anwendungen
                     </p>
-                    <div class="flex justify-center gap-6">
-                        <button class="jd-button px-12 py-5 rounded-full font-bold text-lg text-white">Übersicht
-                            entdecken</button>
+                    <div class="flex justify-start gap-6">
+                        <button class="jd-button px-10 py-5 rounded-full font-bold text-lg text-white">
+                            Übersicht entdecken
+                        </button>
                     </div>
                 </div>
             </section>

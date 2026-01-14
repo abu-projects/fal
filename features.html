@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Lichtmaschinen WG.2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --jd-green: #197529;
+            --bg-deep: #002200;
+            --text-white: rgba(255, 255, 255, 0.9);
+            --text-muted: rgba(255, 255, 255, 0.6);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-white);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.7) contrast(1.1);
+        }
+
+        /* Ambient glow to match the scrollytelling feel */
+        .ambient-glow {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle at center, rgba(25, 117, 41, 0.15) 0%, transparent 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .card-blur {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-blur:hover {
+            border-color: rgba(25, 117, 41, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 20px rgba(25, 117, 41, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Static Background Image from Sequence -->
+    <img src="exploded/ezgif-frame-100.jpg" alt="Background" class="bg-image">
+    <div class="ambient-glow"></div>
+
+    <main class="w-full py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+                <!-- Left Column -->
+                <div class="flex flex-col gap-10">
+                    <div class="card-blur p-10 rounded-[2rem]">
+                        <h3 class="text-3xl font-bold mb-4 text-glow">Maximale Zuverlässigkeit</h3>
+                        <p class="text-white/60 text-lg leading-relaxed">
+                            Unsere John Deere Alternatoren werden nach den höchsten Standards gefertigt und getestet, um
+                            extremen Belastungen standzuhalten.
+                        </p>
+                    </div>
+                    <div class="card-blur p-10 rounded-[2rem]">
+                        <h3 class="text-3xl font-bold mb-4 text-glow">Präzisions-Instandsetzung</h3>
+                        <p class="text-white/60 text-lg leading-relaxed">
+                            Jede Komponente wird digital vermessen und auf computergesteuerten Systemen validiert.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="flex flex-col gap-10 md:mt-20">
+                    <div class="card-blur p-10 rounded-[2rem]">
+                        <h3 class="text-3xl font-bold mb-4 text-glow">Schnelle Verfügbarkeit</h3>
+                        <p class="text-white/60 text-lg leading-relaxed">
+                            Mit über 10.000 Artikeln auf Lager garantieren wir minimale Ausfallzeiten für Ihre
+                            Maschinen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="mt-20 text-center">
+                <a href="index.html"
+                    class="inline-flex items-center gap-2 text-white/40 hover:text-white transition-colors uppercase tracking-widest text-sm font-bold">
+                    <span>←</span> Zurück zur Übersicht
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
